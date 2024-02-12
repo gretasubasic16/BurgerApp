@@ -6,10 +6,6 @@
 1. Registrirajte se na [RapidAPI](https://rapidapi.com/) i dobijte ključ za pristup API-ju.
 2. Klonirajte ovaj repozitorij na svoje računalo.
 
-### Konfiguracija
-1. U direktoriju `config` otvorite `config.properties` datoteku.
-2. U polje `api_key` unesite svoj API ključ dobiven od RapidAPI platforme.
-
 ### Pokretanje
 1. Pokrenite aplikaciju.
 2. Na glavnom zaslonu imate mogućnost pretraživanja burgera po ID-u.
