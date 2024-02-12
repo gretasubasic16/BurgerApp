@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="org.unizd.rma.burgerapp.MainActivity">
+
+    <!-- Unos teksta za pretragu -->
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Search by ID"
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <!-- Dugmadi za pretragu i prikaz svih burgera -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Search" />
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonShowAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Show All" />
+    </LinearLayout>
+
+    <!-- Prikaz rezultata pretrage -->
+    <TextView
+        android:id="@+id/textViewSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- Dugme za sakrivanje liste -->
+    <Button
+        android:id="@+id/buttonHideList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide List" />
+
+    <!-- Prikaz pojedinačnog burgera -->
+    <TextView
+        android:id="@+id/textViewBurgerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- RecyclerView za prikaz liste burgera -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBurgers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
