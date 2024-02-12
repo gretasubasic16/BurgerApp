@@ -1,4 +1,4 @@
-package org.unizd.rma.burgerapp
+package org.unizd.rma.subasic
 
 import android.view.LayoutInflater
 import android.view.View

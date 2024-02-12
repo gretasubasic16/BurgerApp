@@ -1,4 +1,4 @@
-package org.unizd.rma.burgerapp
+package org.unizd.rma.subasic
 
 import org.junit.Test
 
